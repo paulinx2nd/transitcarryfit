@@ -1,0 +1,170 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "assess_leg": {
+      "params": [
+        [
+          "trip_id",
+          "string"
+        ],
+        [
+          "leg_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "cancel_trip": {
+      "params": [
+        [
+          "trip_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_rule": {
+      "params": [
+        [
+          "rule_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_rule_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_rule_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_trip": {
+      "params": [
+        [
+          "trip_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_trip_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_trip_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "open_trip": {
+      "params": [
+        [
+          "trip_key",
+          "string"
+        ],
+        [
+          "item_description",
+          "string"
+        ],
+        [
+          "itinerary",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "publish_rule": {
+      "params": [
+        [
+          "rule_key",
+          "string"
+        ],
+        [
+          "carrier",
+          "string"
+        ],
+        [
+          "route_label",
+          "string"
+        ],
+        [
+          "rule_text",
+          "string"
+        ],
+        [
+          "source_reference",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "retire_rule": {
+      "params": [
+        [
+          "rule_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "seal_trip": {
+      "params": [
+        [
+          "trip_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
